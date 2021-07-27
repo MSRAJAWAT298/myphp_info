@@ -1,0 +1,18 @@
+.table>thead>tr>th, .no-more-tables .table>tbody>tr>td>.table-header-row {
+    font-weight: normal;
+    color: #fff;
+    padding: .5rem .8rem;
+    background-image: -o-linear-gradient(top,  #6fb3e0 0%,  #438EB9 100%);
+    background-image: linear-gradient(to bottom,  #6fb3e0 0%,  #438EB9 100%);
+    font-size: 14px;
+    border-top: 0;
+}
+
+.table>tbody>tr>td{
+    font-size: 12px;
+}
+
+div.dt-buttons {
+    float: right;
+    margin-left:20px;
+}
