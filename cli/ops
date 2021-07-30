@@ -1,0 +1,41 @@
+<?php 
+echo 'SCRIPT START.',PHP_EOL;
+try{
+    echo 'Run TRY block.',PHP_EOL;
+    if(!isset($argv[1])){
+        echo 'NO ARGUMENT: Will throw exception'
+    }
+}
+// var_dump(defined('STDIN'));// check in the PHP file whether it's called from the command line or not:
+
+
+//echo "<pre>$argv :: ";print_r($argv);echo "</pre>";exit;
+
+// function createmodel($argument){
+//     echo "Something went wrong...\ncommand not exist...\n";
+// }
+// function createlistingpage($argument){
+//     echo "Hi I am create you lisitng page...";
+// }
+// echo $argv[0];
+// echo $argv[1];
+// if($argv[0]=="ops" && $argv[1]!=""){
+//     switch($argv[1]){
+//         case createmodel:
+//             createmodel($argv);
+//         break;
+//         case createlistingpage:
+//             createlistingpage($argv);
+//         break;
+//         defualt :
+//         echo "Something went wrong...\ncommand not exist... \nin switch case\n";
+//     }
+// }else{
+//         echo "Something went wrong...\ncommand not exist...\n";
+// }
+
+
+
+
+
+?>

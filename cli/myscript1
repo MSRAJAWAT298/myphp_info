@@ -1,0 +1,4 @@
+<?php
+$add=$argv[1]+$argv[2];
+echo "addition = " . $add,"\n";
+?>
