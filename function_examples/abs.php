@@ -9,5 +9,11 @@ The above example will output:
 274982683358
 274982683358
 </pre>
+<h1>Application or Uses of abs functions</h1><hr>
+<pre>
+-----
+-----
+-----
+</pre>
 </div>
 <?php require_once('../include/footer.php') ?>

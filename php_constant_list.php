@@ -1,23 +1,5 @@
 <?php 
-require_once 'db.php';
-$connectionObj = new db(); // OBJECT 
-$tname = 'function_description';
-
-
-$get_defined_functions = get_defined_functions(true);
-$internal_function = $get_defined_functions['internal'];
-$key =array_search('_dyuweyrj4', $internal_function); 
-unset($internal_function[$key]);
-$key =array_search('_dyuweyrj4r', $internal_function); 
-unset($internal_function[$key]);
-sort($internal_function);
-$internal_function_arr = implode('\',\'',$internal_function);
-// $con = " AND function_name IN ('{$internal_function_arr}')";
-// echo '<br>'.basename(__FILE__).' '.__LINE__.'<pre> $con :: '; print_r($con); echo '</pre>'; exit;
-// $fetch_data = $connectionObj->select($tname, $con);
-// echo '<br>'.basename(__FILE__).' '.__LINE__.'<pre> $fetch_data :: '; print_r($fetch_data); echo '</pre>'; exit;
-$description['abs'] = 'Returns the absolute value of num. abs(int|float $num): int|float <br/>The absolute value of num. If the argument num is of type float, the return type is also float, otherwise it is int (as float usually has a bigger value range than int).';
-// echo '<br>'.basename(__FILE__).' '.__LINE__.'<pre> $internal_function :: '; print_r($internal_function); echo '</pre>'; exit;
+$get_defined_functions = get_defined_constants();
 require_once('include/header.php');
 ?>
 <body>
@@ -43,12 +25,13 @@ require_once('include/header.php');
                                     </thead>
                                     <tbody>
                                         <?php 
-                                            foreach ($internal_function as $key=>$v) { ?>
+                                        // echo '<br>'.basename(__FILE__).' '.__LINE__.'<pre> data :: '; print_r($get_defined_functions); echo '</pre>'; exit;
+                                            foreach ($get_defined_functions as $key=>$v) { ?>
                                             <tr>
                                                 
                                                 <td></td>
+                                                <td><?php echo $key ?></td>
                                                 <td><?php echo $v ?></td>
-                                                <td><?php echo (!empty($description[$v]))?$description[$v]:''; ?></td>
                                                 <td class="text-center"><a class="openpop" href="function_examples/<?php echo $v;?>.php"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
                                                 <!--<td><a class="openpop" href="<?php //echo $v;?>.php"><i class="fa fa-eye" aria-hidden="true"></i></a></td>-->
                                             </tr>

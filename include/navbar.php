@@ -8,11 +8,17 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link text-white" href="index.php">Home <span class="sr-only">(current)</span></a>
-      </li>
-      
+      </li>      
       <li class="nav-item">
-        <a class="nav-link text-white" href="php_function_list.php">PHP functions List</a>
+        <a class="nav-link text-white" href="php_function_list.php">PHP Functions List</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="add_function_description.php">Add Functions Description</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="php_constant_list.php">PHP Constant List</a>
+      </li>
+      <!--
       <li class="nav-item">
         <a class="nav-link text-white" href="#array_function.php">Array functions</a>
       </li>
@@ -33,7 +39,7 @@
           <a class="dropdown-item" href="bcmath.php">BCMath</a>
           <a class="dropdown-item" href="bzip2.php">Bzip2</a>
         </div>
-      </li>
+      </li>-->
     </ul>
   </div>
 </nav>
